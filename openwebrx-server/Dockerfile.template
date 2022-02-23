@@ -1,2 +1,5 @@
 FROM jketterl/openwebrx-rtltcp
 #FROM jketterl/openwebrx:stable
+
+COPY receiver_top_photo.jpg /var/lib/receiver_top_photo.jpg
+COPY settings.json /var/lib/settings.json

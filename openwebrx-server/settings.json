@@ -1,0 +1,51 @@
+{
+    "version": 7,
+    "sdrs": {
+        "e119b4d4-e5eb-4937-8109-6190ced48c98": {
+            "name": "RTLServer",
+            "type": "rtl_tcp",
+            "profiles": {
+                "10f47935-24e1-42d2-9018-56ad05d780f2": {
+                    "name": "Radio?",
+                    "center_freq": 90300000,
+                    "samp_rate": 2400000,
+                    "start_freq": 90300000,
+                    "start_mod": "wfm"
+                }
+            },
+            "remote": "sdr-server:1234"
+        }
+    },
+    "receiver_name": "Raspy",
+    "receiver_location": "Oviedo, Spain",
+    "receiver_asl": 232,
+    "receiver_admin": "javiercp@gmail.com",
+    "receiver_gps": {
+        "lat": 43.3615663773216,
+        "lon": -5.85039460974248
+    },
+    "photo_title": "Panorama of Oviedo from nearby mount Naranco",
+    "photo_desc": "",
+    "max_clients": 5,
+    "receiver_keys": [
+        ""
+    ],
+    "waterfall_scheme": "GoogleTurboWaterfall",
+    "fft_fps": 9,
+    "fft_size": 4096,
+    "fft_voverlap_factor": 0.3,
+    "waterfall_levels": {
+        "min": -88.0,
+        "max": -20.0
+    },
+    "waterfall_auto_levels": {
+        "min": 3.0,
+        "max": 10.0
+    },
+    "waterfall_auto_min_range": 50,
+    "audio_compression": "adpcm",
+    "fft_compression": "adpcm",
+    "tuning_precision": 2,
+    "google_maps_api_key": "",
+    "map_position_retention_time": 7200
+}
