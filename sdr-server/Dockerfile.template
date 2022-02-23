@@ -3,5 +3,4 @@ COPY deploy-rtl-sdr.sh /src/deploy-rtl-sdr.sh
 RUN  bash -x /src/deploy-rtl-sdr.sh
 
 COPY start.sh /src/start.sh
-#CMD [ "/src/start.sh" ]
-CMD [ "sleep", "infinity" ]
+CMD [ "bash" "-x /src/start.sh" ]
