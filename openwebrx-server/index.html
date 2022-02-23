@@ -55,10 +55,9 @@
         </div>
         <div id="openwebrx-panels-container">
             <div id="openwebrx-panels-container-left">
-                <div class="openwebrx-panel" data-panel-name="client-under-devel" style="width: 245px; background-color: Red;">
+                <div class="openwebrx-panel" data-panel-name="client-under-devel" style="display: none; width: 245px; background-color: Red;">
                 </div>
-                <div class="openwebrx-panel" id="openwebrx-panel-digimodes" style="display: none; width: 619px;" data-panel-name="
-digimodes">
+                <div class="openwebrx-panel" id="openwebrx-panel-digimodes" style="display: none; width: 619px;" data-panel-name="digimodes">
                     <div id="openwebrx-digimode-canvas-container">
                         <div id="openwebrx-digimode-select-channel"></div>
                     </div>
@@ -69,16 +68,11 @@ digimodes">
                         </div>
                     </div>
                 </div>
-                <div class="openwebrx-panel openwebrx-message-panel" id="openwebrx-panel-wsjt-message" style="display: none; width
-: 619px;" data-panel-name="wsjt-message"></div>
-                <div class="openwebrx-panel openwebrx-message-panel" id="openwebrx-panel-js8-message" style="display:none; width: 
-619px;" data-panel-name="js8-message"></div>
-                <div class="openwebrx-panel openwebrx-message-panel" id="openwebrx-panel-packet-message" style="display: none; wid
-th: 619px;" data-panel-name="aprs-message"></div>
-                <div class="openwebrx-panel openwebrx-message-panel" id="openwebrx-panel-pocsag-message" style="display: none; wid
-th: 619px;" data-panel-name="pocsag-message"></div>
-                <div class="openwebrx-panel openwebrx-meta-panel" id="openwebrx-panel-metadata-m17" style="display: none;" data-pa
-nel-name="metadata-m17">
+                <div class="openwebrx-panel openwebrx-message-panel" id="openwebrx-panel-wsjt-message" style="display: none; width: 619px;" data-panel-name="wsjt-message"></div>
+                <div class="openwebrx-panel openwebrx-message-panel" id="openwebrx-panel-js8-message" style="display:none; width: 619px;" data-panel-name="js8-message"></div>
+                <div class="openwebrx-panel openwebrx-message-panel" id="openwebrx-panel-packet-message" style="display: none; width: 619px;" data-panel-name="aprs-message"></div>
+                <div class="openwebrx-panel openwebrx-message-panel" id="openwebrx-panel-pocsag-message" style="display: none; width: 619px;" data-panel-name="pocsag-message"></div>
+                <div class="openwebrx-panel openwebrx-meta-panel" id="openwebrx-panel-metadata-m17" style="display: none;" data-panel-name="metadata-m17">
                     <div class="openwebrx-meta-slot">
                         <div class="openwebrx-meta-user-image">
                             <img class="directcall" src="static/gfx/openwebrx-directcall.svg">
@@ -87,8 +81,7 @@ nel-name="metadata-m17">
                         <div class="openwebrx-m17-destination"></div>
                     </div>
                 </div>
-                <div class="openwebrx-panel openwebrx-meta-panel" id="openwebrx-panel-metadata-ysf" style="display: none;" data-pa
-nel-name="metadata-ysf">
+                <div class="openwebrx-panel openwebrx-meta-panel" id="openwebrx-panel-metadata-ysf" style="display: none;" data-panel-name="metadata-ysf">
                     <div class="openwebrx-meta-slot">
                         <div class="openwebrx-ysf-mode"></div>
                         <div class="openwebrx-meta-user-image">
@@ -99,8 +92,7 @@ nel-name="metadata-ysf">
                         <div class="openwebrx-ysf-down"></div>
                     </div>
                 </div>
-                <div class="openwebrx-panel openwebrx-meta-panel" id="openwebrx-panel-metadata-dstar" style="display: none;" data-
-panel-name="metadata-dstar">
+                <div class="openwebrx-panel openwebrx-meta-panel" id="openwebrx-panel-metadata-dstar" style="display: none;" data-panel-name="metadata-dstar">
                     <div class="openwebrx-meta-slot">
                         <div class="openwebrx-meta-user-image">
                             <img class="directcall" src="static/gfx/openwebrx-directcall.svg">
@@ -112,8 +104,7 @@ panel-name="metadata-dstar">
                         <div class="openwebrx-dstar-destination"></div>
                     </div>
                 </div>
-                <div class="openwebrx-panel openwebrx-meta-panel" id="openwebrx-panel-metadata-nxdn" style="display: none;" data-p
-anel-name="metadata-nxdn">
+                <div class="openwebrx-panel openwebrx-meta-panel" id="openwebrx-panel-metadata-nxdn" style="display: none;" data-panel-name="metadata-nxdn">
                     <div class="openwebrx-meta-slot">
                         <div class="openwebrx-meta-user-image">
                             <img class="directcall" src="static/gfx/openwebrx-directcall.svg">
@@ -124,8 +115,7 @@ anel-name="metadata-nxdn">
                         <div class="openwebrx-nxdn-destination"></div>
                     </div>
                 </div>
-                <div class="openwebrx-panel openwebrx-meta-panel" id="openwebrx-panel-metadata-dmr" style="display: none;" data-pa
-nel-name="metadata-dmr">
+                <div class="openwebrx-panel openwebrx-meta-panel" id="openwebrx-panel-metadata-dmr" style="display: none;" data-panel-name="metadata-dmr">
                     <div class="openwebrx-meta-slot openwebrx-dmr-timeslot-panel">
                         <div class="openwebrx-dmr-slot">Timeslot 1</div>
                         <div class="openwebrx-meta-user-image">
@@ -161,14 +151,12 @@ nel-name="metadata-dmr">
                                 Author contact: <a href="http://www.justjakob.de/" target="_blank">Jakob Ketterl, DD5JFK</a> |
                                 <a href="https://www.openwebrx.de" target="_blank">OpenWebRX homepage</a>
                             </div>
-                            <div>Support and information: <a href="https://groups.io/g/openwebrx" target="_blank">Groups.io Mailin
-glist</a></div>
+                            <div>Support and information: <a href="https://groups.io/g/openwebrx" target="_blank">Groups.io Mailinglist</a></div>
                             <div id="openwebrx-debugdiv"></div>
                         </div>
                     </div>
                 </div>
-                <div class="openwebrx-panel" id="openwebrx-panel-status" data-panel-name="status" style="width: 615px;" data-panel
--transparent="true">
+                <div class="openwebrx-panel" id="openwebrx-panel-status" data-panel-name="status" style="width: 615px;" data-panel-transparent="true">
                     <div class="openwebrx-progressbar" id="openwebrx-bar-audio-buffer" data-type="audiobuffer"></div>
                     <div class="openwebrx-progressbar" id="openwebrx-bar-audio-output" data-type="audiooutput"></div>
                     <div class="openwebrx-progressbar" id="openwebrx-bar-audio-speed" data-type="audiospeed"></div>
@@ -184,8 +172,7 @@ glist</a></div>
                             <div class="webrx-actual-freq"></div>
                             <div class="webrx-mouse-freq"></div>
                         </div>
-                        <div class="openwebrx-button openwebrx-square-button openwebrx-bookmark-button" style="display:none;" titl
-e="Add bookmark...">
+                        <div class="openwebrx-button openwebrx-square-button openwebrx-bookmark-button" style="display:none;" title="Add bookmark...">
                             <svg viewBox="0 0 80 80"><use xlink:href="static/gfx/svg-defs.svg#bookmark"></use></svg>
                         </div>
                     </div>
@@ -195,48 +182,32 @@ e="Add bookmark...">
                     </div>
                     <div class="openwebrx-modes openwebrx-panel-line"></div>
                     <div class="openwebrx-panel-line">
-                        <div title="Mute on/off" class="openwebrx-button openwebrx-slider-button openwebrx-mute-button" onclick="t
-oggleMute();">
-                            <svg class="unmuted" viewBox="0 0 80 80"><use xlink:href="static/gfx/svg-defs.svg#speaker"></use></svg
->
-                            <svg class="muted" viewBox="0 0 80 80"><use xlink:href="static/gfx/svg-defs.svg#speaker-muted"></use><
-/svg>
+                        <div title="Mute on/off" class="openwebrx-button openwebrx-slider-button openwebrx-mute-button" onclick="toggleMute();">
+                            <svg class="unmuted" viewBox="0 0 80 80"><use xlink:href="static/gfx/svg-defs.svg#speaker"></use></svg>
+                            <svg class="muted" viewBox="0 0 80 80"><use xlink:href="static/gfx/svg-defs.svg#speaker-muted"></use></svg>
                         </div>
-                        <input title="Volume" id="openwebrx-panel-volume" class="openwebrx-panel-slider" type="range" min="0" max=
-"150" value="50" step="1" onchange="updateVolume()" oninput="updateVolume()">
-                        <div title="Auto-adjust waterfall colors (right-click for continuous)" id="openwebrx-waterfall-colors-auto
-" class="openwebrx-button openwebrx-slider-button">
-                            <svg class="auto" viewBox="0 0 80 80"><use xlink:href="static/gfx/svg-defs.svg#waterfall-auto"></use><
-/svg>
-                            <svg class="continuous" viewBox="0 0 80 80"><use xlink:href="static/gfx/svg-defs.svg#waterfall-continu
-ous"></use></svg>
+                        <input title="Volume" id="openwebrx-panel-volume" class="openwebrx-panel-slider" type="range" min="0" max="150" value="50" step="1" onchange="updateVolume()" oninput="updateVolume()">
+                        <div title="Auto-adjust waterfall colors (right-click for continuous)" id="openwebrx-waterfall-colors-auto" class="openwebrx-button openwebrx-slider-button">
+                            <svg class="auto" viewBox="0 0 80 80"><use xlink:href="static/gfx/svg-defs.svg#waterfall-auto"></use></svg>
+                            <svg class="continuous" viewBox="0 0 80 80"><use xlink:href="static/gfx/svg-defs.svg#waterfall-continuous"></use></svg>
                         </div>
-                        <input title="Waterfall minimum level" id="openwebrx-waterfall-color-min" class="openwebrx-panel-slider" t
-ype="range" min="-200" max="100" value="50" step="1" onchange="updateWaterfallColors(0);" oninput="updateVolume()">
+                        <input title="Waterfall minimum level" id="openwebrx-waterfall-color-min" class="openwebrx-panel-slider" type="range" min="-200" max="100" value="50" step="1" onchange="updateWaterfallColors(0);" oninput="updateVolume()">
                     </div>
                     <div class="openwebrx-panel-line">
-                        <div title="Auto-set squelch level" class="openwebrx-squelch-auto openwebrx-button openwebrx-slider-button
-">
+                        <div title="Auto-set squelch level" class="openwebrx-squelch-auto openwebrx-button openwebrx-slider-button">
                             <svg viewBox="0 0 80 80"><use xlink:href="static/gfx/svg-defs.svg#squelch"></use></svg>
                         </div>
-                        <input title="Squelch" class="openwebrx-squelch-slider openwebrx-panel-slider" type="range" min="-150" max
-="0" value="-150" step="1">
-                        <div title="Set waterfall colors to default" id="openwebrx-waterfall-colors-default" class="openwebrx-butt
-on openwebrx-slider-button" onclick="waterfallColorsDefault()">
+                        <input title="Squelch" class="openwebrx-squelch-slider openwebrx-panel-slider" type="range" min="-150" max="0" value="-150" step="1">
+                        <div title="Set waterfall colors to default" id="openwebrx-waterfall-colors-default" class="openwebrx-button openwebrx-slider-button" onclick="waterfallColorsDefault()">
                             <svg viewBox="0 0 80 80"><use xlink:href="static/gfx/svg-defs.svg#waterfall-default"></use></svg>
                         </div>
-                        <input title="Waterfall maximum level" id="openwebrx-waterfall-color-max" class="openwebrx-panel-slider" t
-ype="range" min="-200" max="100" value="50" step="1" onchange="updateWaterfallColors(1);" oninput="updateVolume()">
+                        <input title="Waterfall maximum level" id="openwebrx-waterfall-color-max" class="openwebrx-panel-slider" type="range" min="-200" max="100" value="50" step="1" onchange="updateWaterfallColors(1);" oninput="updateVolume()">
                     </div>
                     <div class="openwebrx-panel-line">
-                        <div class="openwebrx-button openwebrx-square-button openwebrx-zoom-button" onclick="zoomInOneStep();" tit
-le="Zoom in one step"><svg viewBox="0 0 80 80"><use xlink:href="static/gfx/svg-defs.svg#zoom-in"></use></svg></div>
-                        <div class="openwebrx-button openwebrx-square-button openwebrx-zoom-button" onclick="zoomOutOneStep();" ti
-tle="Zoom out one step"><svg viewBox="0 0 80 80"><use xlink:href="static/gfx/svg-defs.svg#zoom-out"></use></svg></div>
-                        <div class="openwebrx-button openwebrx-square-button openwebrx-zoom-button" onclick="zoomInTotal();"  titl
-e="Zoom in totally"><svg viewBox="0 0 80 80"><use xlink:href="static/gfx/svg-defs.svg#zoom-in-total"></use></svg></div>
-                        <div class="openwebrx-button openwebrx-square-button openwebrx-zoom-button" onclick="zoomOutTotal();" titl
-e="Zoom out totally"><svg viewBox="0 0 80 80"><use xlink:href="static/gfx/svg-defs.svg#zoom-out-total"></use></svg></div>
+                        <div class="openwebrx-button openwebrx-square-button openwebrx-zoom-button" onclick="zoomInOneStep();" title="Zoom in one step"><svg viewBox="0 0 80 80"><use xlink:href="static/gfx/svg-defs.svg#zoom-in"></use></svg></div>
+                        <div class="openwebrx-button openwebrx-square-button openwebrx-zoom-button" onclick="zoomOutOneStep();" title="Zoom out one step"><svg viewBox="0 0 80 80"><use xlink:href="static/gfx/svg-defs.svg#zoom-out"></use></svg></div>
+                        <div class="openwebrx-button openwebrx-square-button openwebrx-zoom-button" onclick="zoomInTotal();"  title="Zoom in totally"><svg viewBox="0 0 80 80"><use xlink:href="static/gfx/svg-defs.svg#zoom-in-total"></use></svg></div>
+                        <div class="openwebrx-button openwebrx-square-button openwebrx-zoom-button" onclick="zoomOutTotal();" title="Zoom out totally"><svg viewBox="0 0 80 80"><use xlink:href="static/gfx/svg-defs.svg#zoom-out-total"></use></svg></div>
                         <div id="openwebrx-smeter-db">0 dB</div>
                     </div>
                     <div class="openwebrx-panel-line">
