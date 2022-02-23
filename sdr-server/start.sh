@@ -14,9 +14,12 @@ function logger() {
 logger "getting IP"
 _IP=$(hostname -I) || true
 
-if ["$_IP"]; then
+if [[ -z "$_IP" ]]; then
+        logger "IP missing, aborting..."
+        sleep infinity
+fi
+
 logger "My IP address is '$_IP'" 
 /usr/local/bin/rtl_tcp -a $_IP &
-fi
 
 wait -n
