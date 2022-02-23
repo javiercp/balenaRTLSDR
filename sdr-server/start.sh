@@ -11,11 +11,11 @@ function logger() {
     echo -e "${LIGHTBLUE}[$APPNAME] $1${NOCOLOR}"
 }
 
-logger "Getting IP"
+logger "getting IP"
 _IP=$(hostname -I) || true
 
 if ["$_IP"]; then
-logger "My IP address is %s\n" "$_IP"
+logger "My IP address is '$_IP'" 
 /usr/local/bin/rtl_tcp -a $_IP &
 fi
 
