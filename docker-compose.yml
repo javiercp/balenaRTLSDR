@@ -1,0 +1,32 @@
+version: "2"
+services:
+  sdr-server:
+    build: ./sdr-server
+    container_name: sdr-server
+    devices:
+      - "/dev/bus/usb"    
+    restart: unless-stopped
+    networks:
+      - sdr-network
+
+  openwebrx-server:
+    build: ./openwebrx-server
+    container_name: openwebrx-server
+    restart: unless-stopped
+    ports:
+      - "8073:8073"
+    environment:
+      - OPENWEBRX_ADMIN_USER=admin
+      - OPENWEBRX_ADMIN_PASSWORD=password
+    volumes:
+      - openwebrx-settings:/var/lib/openwebrx
+    networks:
+      - sdr-network
+    tmpfs:
+      - /tmp/openwebrx
+
+networks:
+  sdr-network:
+    
+volumes:
+  openwebrx-settings:

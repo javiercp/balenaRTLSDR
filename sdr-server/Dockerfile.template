@@ -1,0 +1,5 @@
+FROM debian:stable-slim AS base
+COPY deploy-rtl-sdr.sh /src/deploy-rtl-sdr.sh
+RUN  bash -x /src/deploy-rtl-sdr.sh
+
+CMD [ "rtl_tcp", "-a 0.0.0.0" ]

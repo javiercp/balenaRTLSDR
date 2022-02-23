@@ -1,0 +1,35 @@
+name: balenaRTLSDR
+type: sw.application
+description: >-
+  balenaRTLSDR is a project to use a RTL-SDR dongle with your Raspberry Pi!
+  
+post-provisioning: >-
+  ### Using balenaRTLSDR
+
+    - Type `<device-ip>:8073` in a browser window _(You can find your device IP address in the Balena Console)_  
+
+    - The default admin user  `admin` 
+    - The default password for the admin user when deployed with the balena deploy button is `b@13n4!` else the password is `password`
+
+assets:
+  repository: 
+    type: blob.asset
+    data:
+      url: 'https://github.com/javiercp/balenaRTLSDR'
+  logo:
+    type: blob.asset
+    data:
+      url: >-
+        https://raw.githubusercontent.com/javiercp/balenaRTLSDR/main/logo.png
+data:
+  applicationEnvironmentVariables:
+    - TZ: Europe/Paris
+    - SHELL: /usr/bin/bash
+    - OPENWEBRX_ADMIN_USER: admin
+    - OPENWEBRX_ADMIN_PASSWORD: b@13n4!
+  defaultDeviceType: raspberrypi4-64
+  supportedDeviceTypes:
+    - raspberrypi3
+    - raspberrypi3-64
+    - raspberrypi4-64
+version: 0.0.1

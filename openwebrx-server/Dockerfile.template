@@ -1,0 +1,2 @@
+FROM jketterl/openwebrx-rtltcp
+#FROM jketterl/openwebrx:stable
