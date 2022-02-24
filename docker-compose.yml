@@ -3,6 +3,8 @@ services:
   sdr-server:
     build: ./sdr-server
     container_name: sdr-server
+    ports:
+      - "1234:1234"    
     devices:
       - "/dev/bus/usb"    
     restart: unless-stopped
